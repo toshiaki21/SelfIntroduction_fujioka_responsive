@@ -1,0 +1,303 @@
+*{
+  font-family: 'Vollkorn', serif;
+}
+
+
+h1{
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+
+.main-title{
+  color: black;
+  font-family: 'Vollkorn', serif;
+}
+
+#top{
+  display: flex;
+  background-color: gray;
+}
+
+.header-center{
+  margin-top: 0px;
+  margin-left: 660px;
+  background-color: gray;
+  color: white;
+}
+
+.header-right ul{
+  display: flex;
+  background-color: gray;
+  color: white;
+  padding-left: 400px;
+}
+
+li{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/* メイン */
+.kv{
+  background-image: url('./img/IMG_0089.JPG');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 1450px; */
+}
+
+.title-wrap{
+margin: 0 auto;
+text-align: center;
+}
+
+.main-title{
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(69, 67, 67);
+}
+
+/* FafeIn */
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.main-title{
+  animation-name: fadeInAnime;
+  animation-fill-mode:backwards;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease;
+  animation-delay: .8s;
+  animation-direction:normal;
+  }
+
+
+
+/* Me */
+.profile {
+  margin-top: 100px;
+  border-radius: 50%; 
+  width:  180px; 
+  height: 180px; 
+  /* animation:3s linear infinite rotation1; */
+}
+
+/* ローテーション */
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+
+
+
+
+h2{
+  font-size: 40px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+h3{
+  font-size: 20px;
+}
+
+.me{
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+.sub-title{
+margin-top: 100px;
+margin-left: 50px;
+}
+
+/* Hobby */
+.container{
+  display: flex;
+  margin-left: 200px;
+
+}
+
+.hobby-picture{
+  margin-top: 100px;
+  margin-left: 10px;
+  width: 420px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+
+.description-title{
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.description{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+footer{
+  background-color: gray;
+  height: 60px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer{
+  font-size: 18px;
+  padding-top: 20px;
+  color: white;
+}
+
+
+/*  */
+/* レスポンシブ対応 */
+/*  */
+@media screen and (max-width:780px){
+
+header{
+  display: block;
+}
+
+h1{
+  font-size: 20px;
+}
+
+  .main-title{
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  .header-center{
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 4px;
+  }
+ 
+  .kv{
+    height: 70vh;
+  }
+
+  .title-wrap{
+    font-size: 4px;
+  }
+
+  .me{
+    display: block;
+  }
+
+  .profile{
+    margin-top: 20px;
+    margin-left: -150px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .sub-title{
+    margin-top: 30px;
+    margin-left: -150px;
+  }
+
+  p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  h2{
+    font-size: 30px;
+    text-align: start;
+    margin-top: 40px;
+    margin-left: 35px;
+  }
+
+.container{
+  display: block;
+}
+
+.hobby-picture{
+  margin-top: 20px;
+  margin-left: -150px;
+  width: 670px;
+  height: 330px;
+  border-radius: 10px;
+}
+
+.description-title{
+  font-size: 24px;
+  margin-top: 20px;
+  margin-left: -150px; 
+}
+
+.description{
+  margin-top: 10px;
+  margin-left: -150px;
+}
+
+footer{
+  font-size: 20px;
+}
+  }
+  
+
+
+
+
+/* インスタ */
+.insta_btn {
+  display: inline-block;
+  text-align: center;/*中央揃え*/
+  color: #2e6ca5;/*文字色*/
+  font-size: 20px;/*文字サイズ*/
+  text-decoration: none;/*下線消す*/
+}
+
+.insta_btn:hover {/*ホバー時*/
+  color:#668ad8;/*文字色*/
+  transition: .5s;/*ゆっくり変化*/
+}
+
+.insta_btn .insta{/*アイコンの背景*/
+  position: relative;/*相対配置*/
+  display: inline-block;
+  width: 50px;/*幅*/
+  height: 50px;/*高さ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  border-radius: 13px;/*角丸に*/
+}
+
+.insta_btn .insta:before{/*グラデーションを重ねるため*/
+  content: '';
+  position: absolute;/*絶対配置*/
+  top: 23px;/*ずらす*/
+  left: -18px;/*ずらす*/
+  width: 60px;/*グラデーションカバーの幅*/
+  height: 60px;/*グラデーションカバーの高さ*/
+  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+}
+
+.insta_btn .fa-instagram {/*アイコン*/
+  color: #FFF;/*白に*/
+  position: relative;/*z-indexを使うため*/
+  z-index: 2;/*グラデーションより前に*/
+  font-size: 35px;/*アイコンサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+}
