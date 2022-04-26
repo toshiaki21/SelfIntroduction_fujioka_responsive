@@ -30,7 +30,7 @@ h1{
   display: flex;
   background-color: gray;
   color: white;
-  padding-left: 400px;
+  padding-left: 20%;
 }
 
 li{
@@ -233,8 +233,8 @@ h1{
 .hobby-picture{
   margin-top: 20px;
   margin-left: -150px;
-  width: 670px;
-  height: 330px;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
